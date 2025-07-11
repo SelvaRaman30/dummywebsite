@@ -1,11 +1,12 @@
 import React from 'react';
+import Header from '@widgets/header';
 
-const Homepage = () =>{
-    return(
-       <>
-        <p>asdfasd</p>
-       </>
-    )
+const Homepage = () => {
+    return (
+        <>
+            <Header />
+        </>
+    );
 };
 
 export default Homepage;

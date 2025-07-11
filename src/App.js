@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Homepage from '@pages/homepage';
+import Homepage from '@pages/homepage'
 
 function App() {
   return (
     <div className="App">
-      <Homepage />
+      <p>adfads</p>
+      <Homepage/>
     </div>
   );
 }
