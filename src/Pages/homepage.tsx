@@ -1,10 +1,12 @@
 import React from 'react';
-import Header from '@widgets/header';
+import Banner from '@components/banner';
+import {banner} from '@assets/images';
 
 const Homepage = () => {
+
     return (
         <>
-            <Header />
+            <Banner imageurl={banner}/>
         </>
     );
 };
