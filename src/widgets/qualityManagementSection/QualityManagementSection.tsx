@@ -2,7 +2,7 @@ import { qualityImag, analysisImg } from "@assets/images";
 import { CardBlock } from "@components/index";
 import React from "react";
 
-const QualityManagementSection: React.FC = ({ }) => {
+const QualityManagementSection: React.FC = () => {
     const content1 = `Our experienced staff consists of expert project managers who are experienced in many different sectors and hold the PMP certification. We are by your side to implement and develop the PMP$^{\circledR}$ methodology, which is internationally valid, in your company to strengthen the areas you believe are weak in supporting the management of your projects.`;
     const content2 = `To prevent software errors in the projects we manage, we implement the tests we carry out at every stage of the project, either manually or through test automation. Our experienced team provides a customer experience that starts with high-quality testing services for institutions and ends with quality and satisfying results.`
     return(

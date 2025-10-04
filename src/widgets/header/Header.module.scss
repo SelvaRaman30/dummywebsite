@@ -23,18 +23,6 @@
         margin: 0 10px;
         font-weight: 600;
         font-size: 18px;
-
-        &>button {
-            background: #F84646;
-            border-color: #F84646;
-
-            & :hover,
-            & :focus,
-            & :active {
-                background: #F84646;
-                border-color: #F84646;
-            }
-        }
     }
 
 }
@@ -75,6 +63,30 @@
     }
 }
 
+.loginBtn {
+    background: #F84646 !important;
+    border-color: #F84646 !important;
+    color: #fff !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background: #F84646 !important;
+        border-color: #F84646 !important;
+    }
+}
+
+.linkButton {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+}
+
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .subscriberWrap {
         top: 58%;
@@ -107,7 +119,10 @@
 
     .subHeading {
         font-size: 16px !important;
+    }
 
+    .linkButton {
+        font-size: 16px;
     }
 }
 
@@ -175,12 +190,6 @@
             &>a {
                 text-decoration: none;
                 color: #000;
-            }
-
-            &>button {
-                background: #F84646;
-                border-color: #F84646;
-                color: #fff;
             }
         }
     }

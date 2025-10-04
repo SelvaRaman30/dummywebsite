@@ -14,13 +14,13 @@ const Header = () => {
                 <div className={`col-xxl-4 col-xl-4 col-lg-2 col-sm-6 col-md-12`}></div>
                 <div className='col-xxl-8 col-xl-8 col-lg-10 col-sm-12 col-md-12'>
                     <ul className={styles.listStyle}>
-                        <li><a href="#">Solutions & Services</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Technologies</a></li>
-                        <li><a href="#">Human Resources</a></li>
-                        <li><a href="#">Corporate</a></li>
+                        <li><button type="button" className={styles.linkButton}>Solutions & Services</button></li>
+                        <li><button type="button" className={styles.linkButton}>Products</button></li>
+                        <li><button type="button" className={styles.linkButton}>Technologies</button></li>
+                        <li><button type="button" className={styles.linkButton}>Human Resources</button></li>
+                        <li><button type="button" className={styles.linkButton}>Corporate</button></li>
                         <li>
-                            <button type="button" className="btn btn-primary loginBtn">Contact</button>
+                            <button type="button" className={`btn btn-primary ${styles.loginBtn}`}>Contact</button>
                         </li>
                     </ul>
                 </div>
@@ -28,19 +28,19 @@ const Header = () => {
             
             <div className={`${styles.headerContainer} d-flex d-md-none justify-content-between row`}>
                 <img className={`${styles.mobileHumburgerMenu}`} src={List} onClick={toggleMenu} />
-                <button type="button" className="btn btn-primary loginBtn">Contact</button>
+                <button type="button" className={`btn btn-primary ${styles.loginBtn}`}>Contact</button>
             </div>
             {menuOpen && (
                 <div className={styles.mobileMenu}>
                     <button className={styles.closeBtn} onClick={closeMenu}>×</button>
                     <ul className={styles.mobileList}>
-                        <li><a href="#" onClick={closeMenu}>Solutions & Services</a></li>
-                        <li><a href="#" onClick={closeMenu}>Products</a></li>
-                        <li><a href="#" onClick={closeMenu}>Technologies</a></li>
-                        <li><a href="#" onClick={closeMenu}>Human Resources</a></li>
-                        <li><a href="#" onClick={closeMenu}>Corporate</a></li>
+                        <li><button type="button" className={styles.linkButton}>Solutions & Services</button></li>
+                        <li><button type="button" className={styles.linkButton}>Products</button></li>
+                        <li><button type="button" className={styles.linkButton}>Technologies</button></li>
+                        <li><button type="button" className={styles.linkButton}>Human Resources</button></li>
+                        <li><button type="button" className={styles.linkButton}>Corporate</button></li>
                         <li>
-                            <button type="button" className="btn btn-primary loginBtn" onClick={closeMenu}>Contact</button>
+                            <button type="button" className={`btn btn-primary ${styles.loginBtn}`} onClick={closeMenu}>Contact</button>
                         </li>
                     </ul>
                 </div>
