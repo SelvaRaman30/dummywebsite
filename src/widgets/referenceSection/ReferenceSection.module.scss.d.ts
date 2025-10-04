@@ -1,0 +1,13 @@
+export declare const akbank: string;
+export declare const akcansa: string;
+export declare const aktas: string;
+export declare const amazon: string;
+export declare const bookMyShow: string;
+export declare const borusan: string;
+export declare const gridContainer: string;
+export declare const istanbul: string;
+export declare const logoCard: string;
+export declare const ola: string;
+export declare const tumunugor: string;
+export declare const viewAll: string;
+export declare const wrapper: string;

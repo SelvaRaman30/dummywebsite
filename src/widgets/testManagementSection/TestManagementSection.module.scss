@@ -1,0 +1,85 @@
+.managementSection {
+    background: #F84646;
+    color: #fff;
+}
+
+.managementSubHeading {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    column-gap: 20px;
+}
+
+
+.subContent::after {
+    content: '';
+    position: absolute;
+    top: 25%;
+    background-image: url('../../assets/icons/CaretCircleDoubleRight.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    right: 0px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .managementSubHeading {
+        grid-template-columns: repeat(4, 25%);
+        column-gap: 0px;
+        position: relative;
+        left: 30px;
+
+        &>p {
+            padding-left: 0px !important;
+        }
+    }
+
+    .subContent::after {
+        right: 10px;
+        top: 21%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .managementSubHeading {
+        position: relative;
+        left: 8px;
+
+        &>p {
+            padding-left: 0px !important;
+            font-size: 12px;
+        }
+    }
+
+    .subContent::after {
+        right: -3px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .managementSubHeading {
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 2rem;
+
+        &>p {
+            padding: 0px !important;
+            text-align: center !important;
+            padding-bottom: 40px !important;
+        }
+    }
+
+    .subContent::after {
+        right: 47%;
+        left: unset;
+        top: unset;
+        bottom: 0px;
+        transform: rotate(90deg);
+    }
+
+    .managementSection {
+            padding-bottom: 0px !important;
+    }
+}

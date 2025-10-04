@@ -27,7 +27,10 @@
         &>button {
             background: #F84646;
             border-color: #F84646;
-            & :hover, & :focus, & :active{
+
+            & :hover,
+            & :focus,
+            & :active {
                 background: #F84646;
                 border-color: #F84646;
             }
@@ -53,6 +56,10 @@
         &>input {
             border-radius: 10px !important;
             padding-left: 30px;
+
+            &:focus {
+                z-index: 2 !important;
+            }
         }
 
         &>button {
@@ -64,6 +71,130 @@
             background: #F84646;
             border-color: #F84646;
             color: #fff;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .subscriberWrap {
+        top: 58%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .listStyle {
+        justify-content: flex-end;
+        gap: 20px;
+
+        &>li {
+            margin: 0px;
+            font-size: 14px;
+        }
+    }
+
+    .subscriberWrap {
+        top: 60%;
+        padding-left: 60px;
+
+        & .subscriberInputWrap {
+            width: 90%;
+        }
+    }
+
+    .headingTitle {
+        font-size: 18px !important;
+    }
+
+    .subHeading {
+        font-size: 16px !important;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mobileHumburgerMenu {
+        width: 70px;
+        cursor: pointer;
+    }
+
+    .headerContainer {
+        &>button {
+            background: #F84646;
+            border-color: #F84646;
+            width: auto;
+            margin-right: 10px;
+
+            & :hover,
+            & :focus,
+            & :active {
+                background: #F84646;
+                border-color: #F84646;
+            }
+        }
+    }
+
+    .mobileMenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .closeBtn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        color: #000;
+    }
+
+    .mobileList {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        &>li {
+            font-weight: 600;
+            font-size: 18px;
+
+            &>a {
+                text-decoration: none;
+                color: #000;
+            }
+
+            &>button {
+                background: #F84646;
+                border-color: #F84646;
+                color: #fff;
+            }
+        }
+    }
+
+    .subscriberWrap {
+        padding-left: 0px;
+        top: 53%;
+
+        &>p {
+            text-align: center !important;
+        }
+
+        & .subscriberInputWrap {
+            width: 97%;
         }
     }
 }

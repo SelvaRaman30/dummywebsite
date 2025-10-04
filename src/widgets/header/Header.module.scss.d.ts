@@ -1,5 +1,11 @@
+export declare const closeBtn: string;
 export declare const container: string;
 export declare const headerContainer: string;
+export declare const headingTitle: string;
 export declare const listStyle: string;
+export declare const mobileHumburgerMenu: string;
+export declare const mobileList: string;
+export declare const mobileMenu: string;
+export declare const subHeading: string;
 export declare const subscriberInputWrap: string;
 export declare const subscriberWrap: string;
