@@ -2,7 +2,7 @@ import { contactUs } from "@assets/images";
 import React from "react";
 import styles from './ContactuSection.module.scss';
 
-const ContactusSection: React.FC = ({}) =>{
+const ContactusSection: React.FC = () =>{
     return(
         <div className={`${styles.contactUsWrapper} container mt-5 mb-5 pt-5 pb-5`}>
             <div className={`row justify-content-center`}>

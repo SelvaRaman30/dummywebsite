@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./TestManagementSection.module.scss";
 
-const TestManagementSection: React.FC = ({ }) => {
+const TestManagementSection: React.FC = () => {
     return (
         <section className={`mt-5 ${styles.managementSection} py-5 `}>
             <div className={`container`}>

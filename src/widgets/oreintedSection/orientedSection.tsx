@@ -2,7 +2,7 @@ import { acceptanceIcon, bussinessIcon, documentIcon, flowIcon, prototypingIcon,
 import React from "react";
 import styles from './OreintedSection.module.scss';
 
-const OrientedSection: React.FC = ({ }) => {
+const OrientedSection: React.FC = () => {
     return (
         <div className={`container mt-5 pt-5 mb-5 pb-5`}>
             <div className={`row`}>
