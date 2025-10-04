@@ -6,7 +6,7 @@ const ContactusSection: React.FC = () =>{
     return(
         <div className={`${styles.contactUsWrapper} container mt-5 mb-5 pt-5 pb-5`}>
             <div className={`row justify-content-center`}>
-                <img src={contactUs} className={`${styles.img}`} width={150}/>
+                <img src={contactUs} className={`${styles.img}`} width={150} alt="Contact Us"/>
 
                 <h2 className={`display-6 fw-bold`}>
                     Contact us

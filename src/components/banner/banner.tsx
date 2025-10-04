@@ -10,8 +10,8 @@ interface BannerProps {
 const Banner: React.FC<BannerProps> = ({ imageurl }) => {
     return(
         <div className={styles.bannerWrapper}>
-            <img src={imageurl}  className={`${styles.bannerImage} d-sm-none d-none d-md-block`} alt="Banner Image"/>
-            <img src={mobileBanner} className={`${styles.bannerImage} d-block d-md-none`} alt="Banner Image"/>
+            <img src={imageurl}  className={`${styles.bannerImage} d-sm-none d-none d-md-block`} alt="Banner Desktop"/>
+            <img src={mobileBanner} className={`${styles.bannerImage} d-block d-md-none`} alt="Banner Mobile"/>
                 <Header />
         </div>
     );
