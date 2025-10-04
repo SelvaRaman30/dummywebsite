@@ -27,7 +27,7 @@ const Header = () => {
             </div>
             
             <div className={`${styles.headerContainer} d-flex d-md-none justify-content-between row`}>
-                <img className={`${styles.mobileHumburgerMenu}`} src={List} onClick={toggleMenu} />
+                <img className={`${styles.mobileHumburgerMenu}`} alt="Humburger Menu" src={List} onClick={toggleMenu} />
                 <button type="button" className={`btn btn-primary ${styles.loginBtn}`}>Contact</button>
             </div>
             {menuOpen && (
